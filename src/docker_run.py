@@ -14,7 +14,6 @@ def patch_fonts(index, ttf_file):
     log_file = f'{output_dir}/patch.{index}.log'
     command = " ".join([
         f'python3 font-patcher -q',
-        f'-s',
         f'-l',
         f'-c',
         f'--careful',
