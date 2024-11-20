@@ -3,19 +3,11 @@ family = "afio"
 spacing = "term"
 serifs = "sans"
 noCvSs = true
-exportGlyphNames = false
+exportGlyphNames = true
 
-[buildPlans.afio.variants.design]
-f = "flat-hook-serifless-crossbar-at-x-height"
-i = "serifed-asymmetric"
-l = "serifed-semi-tailed"
-m = "short-leg-serifless"
-zero = "dotted"
-nine = "open-contour"
-asterisk = "hex-low"
-percent = "dots"
-tittle = "square"
-at = "fourfold-solid-inner-tall"
+  [buildPlans.afio.variants]
+  inherits = "ss14"
+
 
 [buildPlans.afio.slopes.Upright]
 angle = 0
@@ -37,10 +29,20 @@ css = "normal"
 #             and "shape" properly only supports number between 100 and 900 (inclusive).
 #             If you decide to use custom weights you have to define all the weights you
 #             plan to use otherwise they will not be built.
-[buildPlans.afio.weights.light]
+[buildPlans.afio.weights.Thin]
+shape = 100
+menu = 100
+css = 100
+
+[buildPlans.afio.weights.ExtraLight]
 shape = 200
-menu  = 300
-css   = 300
+menu = 200
+css = 200
+
+[buildPlans.IosevkaCustom.weights.Light]
+shape = 300
+menu = 300
+css = 300
 
 [buildPlans.afio.weights.regular]
 shape = 300
@@ -82,10 +84,20 @@ upright = "normal"
 #             If you decide to use custom widths you have to define all the widths you
 #             plan to use otherwise they will not be built.
 
-[buildPlans.afio.widths.normal]
-shape = 540        # Width grade of glyph shapes. NOT actual character width.
-menu  = 5          # Width grade for the font's names. NOT actual character width.
-css   = "normal"   # "font-stretch' property of webfont CSS.
+[buildPlans.afio.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.afio.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
+
+[buildPlans.afio.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
 
 ###################################################################################################
 # Metric overrides
