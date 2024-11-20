@@ -39,7 +39,7 @@ shape = 200
 menu = 200
 css = 200
 
-[buildPlans.IosevkaCustom.weights.Light]
+[buildPlans.afio.weights.Light]
 shape = 300
 menu = 300
 css = 300
