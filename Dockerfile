@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.9
 
 ARG BUILD_DIR=/build
-ARG FONT_NAME=afio
+ARG FONT_NAME=IosevkaTermCondensed
 
 # Check https://github.com/be5invis/Iosevka/releases for font version
 ARG FONT_VERSION=32.1.0
